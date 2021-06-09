@@ -12,13 +12,14 @@ body{
     background-color: #14131a;
     color:#fff;
     font-family: "Roboto", sans-serif;
-    background: linear-gradient(0deg, rgba(20, 19, 26, 0.9), 
-    rgba(20, 19, 26, 0.9)), 
-    url(../img/background.png) center / cover no-repeat;
+    
 }
 .container{
     max-width: 1140px;
     margin: auto;
+    background: 
+    url(../img/blood.png) right top no-repeat,
+    url(../img/background.png) center / 100% no-repeat;
 }
 .header{
     display: flex;
@@ -58,4 +59,35 @@ body{
     font-size: 16px;
     line-height: 140%;
     color: rgba(255, 255, 255, 0.8);
+}
+.button{
+    padding: 15px 30px;
+    border:none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button-text, .button-icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+.button-text{
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 10px;
+}
+.button-primary{
+    color: #8D0019;
+    background-color: #fff;
+}
+.button-link{
+    color: #fff;
+}
+.button-group{
+    margin: 70px;
+}
+.venom{
+    position: absolute;
+    top:0;
+    right:0;
 }
