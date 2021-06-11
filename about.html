@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О фильме - Venom 2</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>    
+    
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body class="primary-bg">
     <div class="container">
@@ -15,6 +21,14 @@
             <img src="img/logo.png" height="71px" width="46px" alt="logo: Venom" class="logo-image">
         </a>
         <nav class="nav">
+            <button class="menu-button">
+                <span class="menu-button-text">меню</span>
+                <img src="img/menu.svg" alt="icon: burger menu" class="menu-button-icon">
+            </button>
+            <button class="menu-close">
+                <span class="menu-close-text">закрыть</span>
+                <img src="img/arrow.svg" alt="icon: close menu" class="menu-close-icon">
+            </button>
             <ul class="nav-menu">
                 <li class="nav-menu-item">
                     <a href="about.html" class="nav-menu-link">о фильме</a>
@@ -53,9 +67,9 @@
                     <li class="list-item">Пегги Лу</li>
                 </ul>
                 <div class="trailer">
-                    <button class="play">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=kOF4p_bCLJs" class="play">
                         <img src="img/play.svg" alt="" class="play-icon">
-                    </button>
+                    </a>
                 </div>
             </div>
             <!-- /.col -->
